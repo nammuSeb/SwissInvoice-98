@@ -5,24 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17fe2a52-a1ad-4948-9d12-65fd98d440b0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BankInfoForm.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BankInfoForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BankInfoForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ClientForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ClientForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/InvoiceForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InvoiceForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PreviewInvoice.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PreviewInvoice.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/QuoteList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/QuoteList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RemarksField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RemarksField.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/useStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/useStore.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/pdfGenerator.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/pdfGenerator.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/pdfGenerator.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/qrGenerator.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/qrGenerator.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/qrGenerator.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1741167276334</updated>
       <workItem from="1741167277585" duration="1538000" />
-      <workItem from="1741169998966" duration="5041000" />
+      <workItem from="1741169998966" duration="6236000" />
     </task>
     <servers />
   </component>

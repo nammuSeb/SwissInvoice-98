@@ -107,6 +107,7 @@ function App() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-8"
         >
+          {/*
           <div className="flex justify-center gap-4 mb-6">
             <button
               onClick={() => setMode('invoice')}
@@ -124,7 +125,9 @@ function App() {
             >
               Devis
             </button>
+
           </div>
+          */}
 
           <h1 className="text-4xl font-bold text-gray-900 mb-2">
             {mode === 'quote' ? 'Création de devis' : 'Création de facture'}
@@ -142,7 +145,7 @@ function App() {
           <>
             <BankInfoForm />
             <ClientForm client={client} setClient={setClient} />
-            {mode === 'invoice' && <QuoteList onSelectQuote={handleQuoteSelection} />}
+            {/* }{mode === 'invoice' && <QuoteList onSelectQuote={handleQuoteSelection} />} */}
           </>
         )}
         {step === 2 && <InvoiceForm invoice={invoice} setInvoice={setInvoice} />}
