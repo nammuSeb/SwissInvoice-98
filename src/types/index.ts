@@ -2,10 +2,8 @@ export interface BankInfo {
   accountName: string;
   iban: string;
   bic: string;
-  bank: string;
-  address: string;
-  zip: string;
-  city: string;
+  bankName: string;
+  bankAddress: string;
 }
 
 export interface Client {
@@ -21,36 +19,34 @@ export interface InvoiceItem {
   description: string;
   quantity: number;
   price: number;
-  vatRate: number;
+  tax?: number;
 }
 
-export interface Invoice {
-  id?: number;
+export interface BaseDocument {
+  id: number;
   number: string;
   date: string;
-  dueDate: string;
+  client: Client;
   items: InvoiceItem[];
-  remarks?: string;
-  quoteRef?: string;
-  total?: number;
-  client?: Client;
+  remarks: string;
+  total: number;
+  qrCode?: string;
 }
 
-export interface Quote extends Invoice {
-  id: number;
-  client: Client;
-  total: number;
+export interface Invoice extends BaseDocument {
+  dueDate: string;
+  quoteRef?: string;
+}
+
+export interface Quote extends BaseDocument {
+  validUntil?: string;
 }
 
 export interface Store {
   bankInfo: BankInfo;
-  clients: Client[];
-  quotes: Quote[];
   invoices: Invoice[];
-  setBankInfo: (bankInfo: BankInfo) => void;
-  addClient: (client: Client) => void;
-  addQuote: (quote: Quote) => void;
+  quotes: Quote[];
   addInvoice: (invoice: Invoice) => void;
-  updateQuote: (id: number, quote: Quote) => void;
-  updateInvoice: (id: number, invoice: Invoice) => void;
+  addQuote: (quote: Quote) => void;
+  updateBankInfo: (info: Partial<BankInfo>) => void;
 }

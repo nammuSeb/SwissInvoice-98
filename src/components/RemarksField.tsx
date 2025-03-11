@@ -21,5 +21,4 @@ const RemarksField: React.FC<RemarksFieldProps> = ({ remarks, setRemarks }) => {
     );
 };
 
-// Add this line to make it a default export
 export default RemarksField;

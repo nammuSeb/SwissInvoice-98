@@ -7,6 +7,16 @@
     <list default="true" id="17fe2a52-a1ad-4948-9d12-65fd98d440b0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BankInfoForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BankInfoForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ClientForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ClientForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/InvoiceForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InvoiceForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PreviewInvoice.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PreviewInvoice.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/QuoteList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/QuoteList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RemarksField.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RemarksField.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/pdfGenerator.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/pdfGenerator.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/qrGenerator.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/qrGenerator.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,12 +44,23 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "npm.build.executor": "Run",
     "npm.dev.executor": "Run",
     "ts.external.directory.path": "C:\\Users\\nammu\\Documents\\GitHub\\SwissInvoice-98\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.build">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -52,6 +73,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
@@ -65,23 +87,12 @@
       <option name="presentableId" value="Default" />
       <updated>1741167276334</updated>
       <workItem from="1741167277585" duration="1538000" />
-      <workItem from="1741169998966" duration="6236000" />
+      <workItem from="1741169998966" duration="8066000" />
+      <workItem from="1741624510873" duration="2628000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/BankInfoForm.tsx</url>
-          <line>26</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
