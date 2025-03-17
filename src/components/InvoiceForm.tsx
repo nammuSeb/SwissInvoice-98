@@ -1,7 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { format } from 'date-fns';
-import { fr } from 'date-fns/locale';
 
 const VAT_RATES = [
   { value: 8.0, label: '8.0% (Standard)' },

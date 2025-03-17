@@ -1,9 +1,14 @@
 import { create } from 'zustand';
-import { persist } from 'zustand/middleware';
-import type { Store, BankInfo, Client, Quote, Invoice } from '../types';
+import { persist, PersistOptions } from 'zustand/middleware';
+import * as Types from '../types';
 
-const useStore = create<Store>(
-  persist(
+type MyPersist = (
+  config: (set: any, get: any, api: any) => Types.Store,
+  options: PersistOptions<Types.Store>
+) => (set: any, get: any, api: any) => Types.Store;
+
+const useStore = create<Types.Store>(
+  (persist as MyPersist)(
     (set) => ({
       bankInfo: {
         accountName: '',
@@ -12,25 +17,26 @@ const useStore = create<Store>(
         bank: '',
         address: '',
         zip: '',
-        city: ''
+        city: '',
+        accountHolder: ''
       },
       clients: [],
       quotes: [],
       invoices: [],
-      setBankInfo: (bankInfo: BankInfo) => set({ bankInfo }),
-      addClient: (client: Client) => set((state) => ({ 
-        clients: [...state.clients, client] 
+      setBankInfo: (bankInfo: Types.BankInfo) => set({ bankInfo }),
+      addClient: (client: Types.Client) => set((state) => ({
+        clients: [...state.clients, client]
       })),
-      addQuote: (quote: Quote) => set((state) => ({ 
-        quotes: [...state.quotes, quote] 
+      addQuote: (quote: Types.Quote) => set((state) => ({
+        quotes: [...state.quotes, quote]
       })),
-      addInvoice: (invoice: Invoice) => set((state) => ({ 
-        invoices: [...state.invoices, invoice] 
+      addInvoice: (invoice: Types.Invoice) => set((state) => ({
+        invoices: [...state.invoices, invoice]
       })),
-      updateQuote: (id: number, quote: Quote) => set((state) => ({
+      updateQuote: (id: number, quote: Types.Quote) => set((state) => ({
         quotes: state.quotes.map((q) => q.id === id ? quote : q)
       })),
-      updateInvoice: (id: number, invoice: Invoice) => set((state) => ({
+      updateInvoice: (id: number, invoice: Types.Invoice) => set((state) => ({
         invoices: state.invoices.map((i) => i.id === id ? invoice : i)
       })),
     }),

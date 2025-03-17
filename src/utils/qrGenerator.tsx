@@ -1,23 +1,23 @@
 import QRCode from 'qrcode';
-import { Invoice } from '../types';
+import type { Invoice } from '../types';
 
 export const generateQRCode = async (data: Invoice): Promise<string> => {
   try {
     console.log("Generating QR code...");
 
     // Calculate total from items
-    const total = data.items.reduce((sum, item) => 
-      sum + (item.quantity * item.price), 0);
+    const total = data.items.reduce((sum, item) =>
+        sum + (item.quantity * item.unitPrice), 0);
 
     const qrData = {
       amount: total.toFixed(2),
       currency: 'CHF',
-      iban: data.bankInfo?.iban,
+      iban: data.bankInfo.iban,
       creditor: {
-        name: data.bankInfo?.accountName,
-        address: data.bankInfo?.address || '',
-        zip: data.bankInfo?.zip || '',
-        city: data.bankInfo?.city || '',
+        name: data.bankInfo.accountHolder,
+        address: data.bankInfo.address || '',
+        zip: data.bankInfo.zip || '',
+        city: data.bankInfo.city || '',
         country: 'CH'
       },
       reference: data.number

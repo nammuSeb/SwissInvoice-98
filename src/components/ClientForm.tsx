@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 
 const ClientForm = ({ client, setClient }) => {
@@ -8,10 +7,10 @@ const ClientForm = ({ client, setClient }) => {
   };
 
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      className="bg-white p-6 rounded-lg shadow-lg"
+      className="bg-white p-6 rounded-lg shadow-lg mt-4"
     >
       <h2 className="text-2xl font-bold mb-6 text-gray-800">Informations Client</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

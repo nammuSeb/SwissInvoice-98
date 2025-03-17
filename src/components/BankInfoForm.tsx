@@ -1,4 +1,5 @@
-import React from 'react';
+// Remove unused import
+// import React from 'react';
 import { motion } from 'framer-motion';
 import useStore from '../store/useStore';
 

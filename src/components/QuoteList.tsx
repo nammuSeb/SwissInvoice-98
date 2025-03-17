@@ -1,13 +1,8 @@
-import { fr } from 'date-fns/locale';
 import { format } from 'date-fns';
+import { fr } from 'date-fns/locale';
 import useStore from '../store/useStore';
-import { Quote } from '../types';
 
-interface QuoteListProps {
-  onSelectQuote: (quote: Quote) => void;
-}
-
-const QuoteList = ({ onSelectQuote }: QuoteListProps) => {
+const QuoteList = ({ onSelectQuote }) => {
   const quotes = useStore((state) => state.quotes);
 
   return (
